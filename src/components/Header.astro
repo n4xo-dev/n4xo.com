@@ -1,17 +1,25 @@
-<header class="flex justify-between items-center p-4 text-lg sticky top-0 bg-gradient-to-b from-n4xo-light from-75%">
+---
+import ThemeSwitch from './ThemeSwitch.svelte'
+---
+
+<header class="flex justify-between items-center p-4 text-lg sticky top-0 bg-gradient-to-b from-n4xo-light from-75% dark:bg-gradient-to-b dark:from-n4xo-dark">
   <a href="#welcome" class="flex items-center p-3">
     <h1 class="text-3xl font-medium">n4xo</h1>
   </a>
   <nav class="flex gap-4">
     <a href="#about" class="font-medium">About</a>
-    <u class="no-underline text-n4xo-brown font-extrabold">&gt;&gt;</u>
+    <u class="no-underline text-n4xo-brown dark:text-n4xo-beige font-extrabold">&gt;&gt;</u>
     <a href="#projects" class="font-medium">Projects</a>
-    <u class="no-underline text-n4xo-brown font-extrabold">&gt;&gt;</u>
+    <u class="no-underline text-n4xo-brown dark:text-n4xo-beige font-extrabold">&gt;&gt;</u>
     <a href="#resume" class="font-medium">Resume</a>
-    <u class="no-underline text-n4xo-brown font-extrabold">&gt;&gt;</u>
+    <u class="no-underline text-n4xo-brown dark:text-n4xo-beige font-extrabold">&gt;&gt;</u>
     <a href="#blog" class="font-medium">Blog</a>
-    <u class="no-underline text-n4xo-brown font-extrabold">&gt;&gt;</u>
+    <u class="no-underline text-n4xo-brown dark:text-n4xo-beige font-extrabold">&gt;&gt;</u>
     <a href="#contact" class="font-medium">Contact</a>
   </nav>
-  <button>switch</button>
+  <div class="flex gap-2 items-center">
+    <u class="no-underline text-2xl">✶</u>
+    <ThemeSwitch client:load/>
+    <u class="no-underline text-2xl">☾</u>
+  </div>
 </header>
