@@ -4,10 +4,9 @@ import Header from "../components/Header.astro";
 interface Props {
 	title: string;
 	despcription?: string;
-	image?: string;
 }
 
-const { title, despcription = "My personal website to show case my portfolio and background.", image = "/images/thumbnail.png" } = Astro.props;
+const { title, despcription = "My personal website to show case my portfolio and background." } = Astro.props;
 ---
 
 <!doctype html>
@@ -16,9 +15,8 @@ const { title, despcription = "My personal website to show case my portfolio and
 		<meta charset="UTF-8" />
 		<meta name="description" content={despcription} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href="/logo.png" />
 		<meta name="generator" content={Astro.generator} />
-		<meta property="og:image" content={image} />
 		<title>{title}</title>
 	</head>
 	<body class="min-h-screen bg-n4xo-light">
