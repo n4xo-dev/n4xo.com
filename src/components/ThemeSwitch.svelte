@@ -19,9 +19,9 @@
   }
 </script>
 
-<div class="toggle-container {isDark ? 'on' : ''}" on:click={toggleTheme}>
+<button class="toggle-container {isDark ? 'on' : ''}" on:click={toggleTheme}>
   <div class="toggle-switch"></div>
-</div>
+</button>
 
 <style>
   .toggle-container {
