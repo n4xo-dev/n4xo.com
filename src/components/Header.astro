@@ -20,14 +20,3 @@ import ThemeSwitch from './ThemeSwitch.svelte'
   <ThemeSwitch client:load/>
 </header>
 
-<style>
-  header {
-    background: linear-gradient(270deg, var(--color-light), var(--color-dark));
-    background-size: 200% 200%;
-    transition: background-position 0.5s ease;
-  }
-
-  body.dark header {
-    background-position: 100% 0;
-  }
-</style>
