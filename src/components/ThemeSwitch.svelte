@@ -19,9 +19,14 @@
   }
 </script>
 
-<button class="toggle-container {isDark ? 'on' : ''}" on:click={toggleTheme}>
-  <div class="toggle-switch"></div>
-</button>
+
+<div class="flex gap-2 items-center">
+  <img src="{isDark ? 'dark_' : ''}sun.svg" alt="light mode" class="w-8 h-8">
+  <button class="toggle-container {isDark ? 'on' : ''}" on:click={toggleTheme}>
+    <div class="toggle-switch"></div>
+  </button>
+  <img src="{isDark ? 'dark_' : ''}moon.svg" alt="dark mode" class="w-8 h-8">
+</div>
 
 <style>
   .toggle-container {
