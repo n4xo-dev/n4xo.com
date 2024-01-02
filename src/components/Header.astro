@@ -1,6 +1,6 @@
 ---
 import HamburgerMenu from './HamburgerMenu.svelte';
-import ThemeSwitch from './ThemeSwitch.svelte'
+import ThemeSwitch from './ThemeSwitch.svelte';
 ---
 
 <header class="flex justify-between items-center p-4 text-lg fixed top-0 w-full bg-gradient-to-b from-n4xo-light from-75% dark:bg-gradient-to-b dark:from-n4xo-dark">
@@ -18,7 +18,9 @@ import ThemeSwitch from './ThemeSwitch.svelte'
     <u class="no-underline text-n4xo-brown dark:text-n4xo-beige font-extrabold">&gt;&gt;</u>
     <a href="#contact" class="font-medium">Contact</a>
   </nav>
-  <ThemeSwitch client:load />
-  <HamburgerMenu client:load />
+  <HamburgerMenu client:load/>
+  <div class="hidden md:block">
+    <ThemeSwitch client:load />
+  </div>
 </header>
 
