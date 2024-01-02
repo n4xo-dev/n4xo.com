@@ -20,7 +20,7 @@
 </script>
 
 
-<div class="flex gap-2 items-center">
+<div class="hidden md:flex gap-2 items-center">
   <div class="relative w-8 h-8">
     <img src="sun.svg" alt="light mode" class="{isDark ? 'opacity-0' : 'opacity-1'} absolute transition-opacity duration-500">
     <img src="dark_sun.svg" alt="light mode" class="{isDark ? 'opacity-1' : 'opacity-0'} absolute transition-opacity duration-500">
