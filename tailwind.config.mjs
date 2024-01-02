@@ -18,7 +18,11 @@ export default {
 			fontSize: {
 				...defultTheme.fontSize,
 				'6.5xl': '4rem',
-			}
+			},
+			transitionProperty: {
+				'color': 'color',
+				'bg': 'background-color',
+			},
 		},
 	},
 	plugins: [],

@@ -18,35 +18,28 @@ const { title, despcription = "My personal website to show case my portfolio and
 		<link rel="icon" type="image/png" href="/logo.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<!-- Script to find the theme configuration of the user -->
+		<script is:inline>
+			const theme = (() => {
+				if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+					return localStorage.getItem("theme");
+				}
+				if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+					return "dark";
+				}
+				return "light";
+			})();
+		
+			if (theme === "light") {
+				document.documentElement.classList.remove("dark");
+			} else {
+				document.documentElement.classList.add("dark");
+			}
+			window.localStorage.setItem("theme", theme);
+		</script>
 	</head>
-	<script is:inline>
-		const theme = (() => {
-			if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-				return localStorage.getItem("theme");
-			}
-			if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-				return "dark";
-			}
-			return "light";
-		})();
-	
-		if (theme === "light") {
-			document.documentElement.classList.remove("dark");
-		} else {
-			document.documentElement.classList.add("dark");
-		}
-		window.localStorage.setItem("theme", theme);
-	</script>
-	<body class="min-h-screen bg-n4xo-light dark:bg-n4xo-dark dark:text-white">
-		<Header />
-		<slot />
+	<body class="min-h-screen bg-n4xo-light dark:bg-n4xo-dark dark:text-white flex flex-col h-screen transition-colors duration-500">
+		<Header class="h-auto"/>
+		<slot class="flex-grow-1"/>
 	</body>
 </html>
-
-<style>
-	body {
-		transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		transition-duration: 500ms;
-	}
-</style>

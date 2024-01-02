@@ -21,11 +21,17 @@
 
 
 <div class="flex gap-2 items-center">
-  <img src="{isDark ? 'dark_' : ''}sun.svg" alt="light mode" class="w-8 h-8">
+  <div class="relative w-8 h-8">
+    <img src="sun.svg" alt="light mode" class="{isDark ? 'opacity-0' : 'opacity-1'} absolute transition-opacity duration-500">
+    <img src="dark_sun.svg" alt="light mode" class="{isDark ? 'opacity-1' : 'opacity-0'} absolute transition-opacity duration-500">
+  </div>
   <button class="toggle-container {isDark ? 'on' : ''}" on:click={toggleTheme}>
     <div class="toggle-switch"></div>
   </button>
-  <img src="{isDark ? 'dark_' : ''}moon.svg" alt="dark mode" class="w-8 h-8">
+  <div class="relative w-8 h-8">
+    <img src="moon.svg" alt="dark mode" class="{isDark ? 'opacity-0' : 'opacity-1'} absolute transition-opacity duration-500">
+    <img src="dark_moon.svg" alt="dark mode" class="{isDark ? 'opacity-1' : 'opacity-0'} absolute transition-opacity duration-500">
+  </div>
 </div>
 
 <style>

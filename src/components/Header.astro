@@ -2,7 +2,7 @@
 import ThemeSwitch from './ThemeSwitch.svelte'
 ---
 
-<header class="flex justify-between items-center p-4 text-lg sticky top-0 bg-gradient-to-b from-n4xo-light from-75% dark:bg-gradient-to-b dark:from-n4xo-dark">
+<header class="flex justify-between items-center p-4 text-lg fixed top-0 w-full bg-gradient-to-b from-n4xo-light from-75% dark:bg-gradient-to-b dark:from-n4xo-dark">
   <a href="#welcome" class="flex items-center p-3">
     <h1 class="text-3xl font-medium">n4xo</h1>
   </a>
@@ -19,3 +19,15 @@ import ThemeSwitch from './ThemeSwitch.svelte'
   </nav>
   <ThemeSwitch client:load/>
 </header>
+
+<style>
+  header {
+    background: linear-gradient(270deg, var(--color-light), var(--color-dark));
+    background-size: 200% 200%;
+    transition: background-position 0.5s ease;
+  }
+
+  body.dark header {
+    background-position: 100% 0;
+  }
+</style>
