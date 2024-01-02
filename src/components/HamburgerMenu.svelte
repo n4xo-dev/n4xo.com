@@ -1,5 +1,5 @@
 <script>
-  import ThemeSwitch from './themeSwitch.svelte';
+  import ThemeSwitch from './ThemeSwitch.svelte';
   let isOpen = false;
 </script>
 
