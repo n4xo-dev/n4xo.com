@@ -1,5 +1,4 @@
 ---
-import { Analytics } from "@vercel/analytics/react";
 import '@fontsource/jetbrains-mono';
 import Header from "../components/Header.astro";
 interface Props {
@@ -42,6 +41,5 @@ const { title, despcription = "My personal website to show case my portfolio and
 	<body class="min-h-screen bg-n4xo-light dark:bg-n4xo-dark dark:text-white flex flex-col h-screen transition-colors duration-500">
 		<Header class="h-auto"/>
 		<slot class="flex-grow-1"/>
-		<Analytics />
 	</body>
 </html>
