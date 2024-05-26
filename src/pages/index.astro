@@ -41,8 +41,29 @@ import Contact from '../components/Contact.svelte';
 				</div>
 			</div>
 		</LandingSection>
+		<LandingSection title="Blog" id="blog">
+			<div class="flex flex-col xl:flex-row gap-5">
+				<div class="flex-1">
+					<p class="leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mb-[20px]">Check out my latest online rants in my blog.</p>
+					<p class="leading-relaxed text-l 2xl:text-xl mb-[20px]">Explore thought-provoking articles, coding tutorials, and unique perspectives on technology and productivity.</p>
+          <p class="mt-10"><a href="https://medium.com/@n4xo" target="_blank" class="bg-n4xo-beige dark:bg-n4xo-beige-dark text-white font-bold py-3 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-n4xo-beige dark:focus:ring-n4xo-beige-dark hover:bg-n4xo-brown dark:hover:bg-n4xo-brown-dark">Check it out</a></p>
+				</div>
+				<div class="flex-1 gradient-mask">
+					<img src="blog.png" alt="Blog" class="w-full h-auto my-10">
+				</div>
+			</div>
+		</LandingSection>
 		<LandingSection title="Contact" id="contact">
 			<Contact client:load/>
 		</LandingSection>
 	</main>
 </Layout>
+
+<style>
+	.gradient-mask img {
+    width: 100%;
+    height: auto;
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+</style>
