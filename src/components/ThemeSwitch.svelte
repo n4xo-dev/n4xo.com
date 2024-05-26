@@ -25,7 +25,7 @@
     <img src="sun.svg" alt="light mode" class="{isDark ? 'opacity-0' : 'opacity-1'} absolute transition-opacity duration-500">
     <img src="dark_sun.svg" alt="light mode" class="{isDark ? 'opacity-1' : 'opacity-0'} absolute transition-opacity duration-500">
   </div>
-  <button class="toggle-container {isDark ? 'on' : ''}" on:click={toggleTheme} aria-label="Dark and Light Mode Button">
+  <button class="bg-n4xo-beige dark:bg-n4xo-beige-dark toggle-container {isDark ? 'on' : ''}" on:click={toggleTheme} aria-label="Dark and Light Mode Button">
     <div class="toggle-switch"></div>
   </button>
   <div class="relative w-8 h-8">
@@ -38,7 +38,6 @@
   .toggle-container {
       width: 60px;
       height: 30px;
-      background-color: #A98D85;
       border-radius: 15px;
       position: relative;
   }
