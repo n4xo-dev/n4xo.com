@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import LandingSection from '../layouts/LandingSection.astro';
+import ResumeHeader from '../layouts/ResumeHeader.astro';
 import Contact from '../components/Contact.svelte';
 ---
 
@@ -39,6 +40,51 @@ import Contact from '../components/Contact.svelte';
 					<p class="leading-relaxed text-l 2xl:text-xl mb-[20px]">- <a href="https://github.com/Soft-Coders/SIInt" class="text-n4xo-beige hover:text-n4xo-brown dark:text-n4xo-beige-dark dark:hover:text-n4xo-brown-dark font-bold">SoftCoders</a>: A college project where we built a web app for a FinTech (Ebury) usign Java EE.</p>
 					<p class="leading-relaxed text-l 2xl:text-xl mb-[20px]">- <a href="https://github.com/n4xo-dev/geneticSudoku" class="text-n4xo-beige hover:text-n4xo-brown dark:text-n4xo-beige-dark dark:hover:text-n4xo-brown-dark font-bold">Genetic Sudoku</a>: A genetic algorithm to solve Sudoku puzzles built with Java.</p>
 				</div>
+			</div>
+		</LandingSection>
+		<LandingSection title="Resume" id="resume">
+			<div>
+				<h2 class="leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mb-[20px] underline">Professional experience</h2>
+				<ResumeHeader position='Backend Software Engineer' company='Bizaway' link='https://bizaway.com/en/' date='Nov 2023 - Present'/>
+				<ul class="list-disc list-inside mb-5">
+					<li class="leading-snug text-l 2xl:text-xl">Optimized DB pipelines, lowering the processing time from 30 seconds to under 400ms.</li>
+					<li class="leading-snug text-l 2xl:text-xl">Contributed to the core code base and created microservices to integrate with third-party providers.</li>
+				</ul>
+				<ResumeHeader position='Full Stack Automation Engineer' company='Ebury' link='https://ebury.com/' date='Jul 2023 - Nov 2023'/>
+				<ul class="list-disc list-inside mb-5">
+					<li class="leading-snug text-l 2xl:text-xl">Led the EburyGPT BPA integration, allowing Ebury employees to use our services through the EburyGPT chatbot.</li>
+				</ul>
+				<ResumeHeader position='Junior Full Stack Automation Engineer' company='Ebury' link='https://ebury.com/' date='Jan 2023 - Jul 2023'/>
+				<ul class="list-disc list-inside mb-5">
+					<li class="leading-snug text-l 2xl:text-xl">Helped fulfill regulatory obligations by developing an automated microservices process to regularly back up over 26,000 files from Google Drive to a Google Cloud Storage bucket.</li>
+					<li class="leading-snug text-l 2xl:text-xl">Facilitated employees' performance analysis by creating a tool to extract tasks' metadata from all teams in Jira.</li>
+					<li class="leading-snug text-l 2xl:text-xl">Improved developer experience in our team by creating Google Apps Script libraries for commonly used APIs and a Node.js library to authenticate Google API libraries using impersonation (domain-wide delegation).</li>
+				</ul>
+				<ResumeHeader position='Part-time Full Stack Automation Engineer' company='Ebury' link='https://ebury.com/' date='Aug 2022 - Jan 2023'/>
+				<ul class="list-disc list-inside mb-5">
+					<li class="leading-snug text-l 2xl:text-xl">Increased consistency on Ebury's infrastructure reconciling Google Workspace Admin and HiBob's data for over 1,600 employees by creating a synchronization cronjob using their APIs and “exploiting” Google Apps Script Web Apps, incurring no cost.</li>
+					<li class="leading-snug text-l 2xl:text-xl">Created a new documentation system for our team using Docsify, improving team collaboration.</li>
+					<li class="leading-snug text-l 2xl:text-xl">Reduced HR and Service Desk's workload by automating employee onboarding on Jira, Vonage, and Fenergo.</li>
+				</ul>
+				<ResumeHeader position='Paintball Instructor' company='Paintball Mountain' link='https://www.paintballmountain.es/' date='Oct 2021 - Apr 2022'/>
+				<ul class="list-disc list-inside mb-5">
+					<li class="leading-snug text-l 2xl:text-xl">Honed interpersonal and sales skills by instructing clients on safe paintball practices, supervising gameplay, and successfully upselling reloads, showcasing an ability to understand and cater to client needs effectively.</li>
+				<h2 class="leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mt-[20px] mb-[20px] underline">Education</h2>
+				<ResumeHeader position='Bachelor's Degree in Computer Science' company='Universidad de Málaga' link='https://www.uma.es/' date='2024'/>
+				<ul class="list-disc list-inside mb-5">
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Honors</strong>: Introduction to Software Engineering 10, Computer Structure 9.9, Computer Technology 9.7</li>
+				</ul>
+				<ResumeHeader position='Enxtension Course on Deep Learning and CUDA' company='Universidad de Málaga' link='https://www.uma.es/' date='2021'/>
+				<h2 class="leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mt-[20px] mb-[20px] underline">Skills</h2>
+				<ul class="list-disc list-inside mb-5">
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Programming Languages</strong>: TypeScript, JavaScript, Go, Python, SQL, Java, C, HTML, CSS.</li>
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Web Dev</strong>: Node.js, Express, Fiber, REST, GraphQL, gRPC, PostgreSQL, MongoDB Redis, Docker, Apps Script.</li>
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Frontend</strong>: Svelte, Tailwind CSS, HTML, CSS, JavaScript, Astro.</li>
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Google Cloud Platform</strong>: Functions, Application Integration, Secret Manager, Workflows, Storage, Run.</li>
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Testing</strong>: Jest, Playwright, Postman, k6.</li>
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Miscellaneous</strong>: Jira, Git, GitHub, Google Workspace, Airtable.</li>
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Languages</strong>: English Cambridge C1, Spanish native.</li>
+				</ul>
 			</div>
 		</LandingSection>
 		<LandingSection title="Blog" id="blog">
