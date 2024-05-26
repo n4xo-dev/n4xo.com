@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import LandingSection from '../layouts/LandingSection.astro';
 ---
 
 <Layout title="n4xo">
@@ -11,11 +12,17 @@ import Layout from '../layouts/Layout.astro';
 				<a href="#about" class="text-n4xo-beige hover:text-n4xo-brown text-4xl sm:text-5xl md:text-6.5xl font-extrabold lg:leading-tight">-></a>
 			</div>
 		</div>
-		<div id="about" class="flex justify-center items-center h-dvh">
-			<div class="text-center">
-				<p class="text-2xl md:text-7xl lg:text-9xl p-2">ᕕ(・◞ ・)ᕗ</p>
-				<p class="text-lg md:text-4xl lg:text-5xl p-2">Site under construction<p>
+		<LandingSection title="About me" id="about">
+			<div class="flex flex-row gap-5">
+				<div>
+					<p class="leading-tight text-4xl mb-[20px]">Hey! I'm Nacho (n4xo), a passionate full-stack engineer specializing in backend development.<p>
+				</div>
+				<div>
+					<p class="leading-relaxed text-l mb-[20px]">I graduated with a degree in Computer Science from the University of Málaga, and I've been honing my skills as a software engineer for nearly two years. My professional journey includes optimizing database pipelines, leading chatbot integrations, and automating processes to enhance efficiency.<p>
+					<br>
+					<p class="leading-relaxed text-l mb-[20px]">I thrive in environments where I can learn and apply new technologies. Currently, I work with Node.js and TypeScript but have a deep love for Go, particularly with the Fiber framework. I'm also diving into Svelte for front-end development and have my sights set on mastering Rust soon.<p>
+				</div>
 			</div>
-		</div>
+		</LandingSection>
 	</main>
 </Layout>

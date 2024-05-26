@@ -1,16 +1,15 @@
 ---
 interface Props {
   title: string;
+  id: string;
 }
 
-const { title } = Astro.props;
+const { title, id } = Astro.props;
 ---
 
-<section class="flex justify-center items-center h-screen">
-  <div>
-    <h3 class="text-xl sm:text-2xl md:text-4xl lg:text-6.5xl font-bold">
-      <span class="text-n4xo-brown dark:text-n4xo-beige font-extrabold">&gt;</span> {title}
-    </h3>
-    <slot />
-  </div>
+<section id=`${id}` class="2xl:p-96 xl:p-60 md:p-40 sm:p-10">
+  <h3 class="text-xl sm:text-2xl md:text-4xl font-black mb-20">
+    <span class="text-n4xo-brown dark:text-n4xo-beige font-extrabold">&gt;</span> {title}
+  </h3>
+  <slot />
 </section>
