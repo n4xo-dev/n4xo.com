@@ -39,29 +39,29 @@
     <p class="leading-relaxed text-l 2xl:text-xl mb-[20px]">I'm always looking for new opportunities to learn and grow. If you'd like to collaborate or have a project in mind, feel free to reach out!</p>
     <p class="leading-relaxed text-l 2xl:text-xl mb-[20px]">
       <a href="mailto:me@n4xo.com" class="text-n4xo-beige hover:text-n4xo-brown dark:text-n4xo-beige-dark dark:hover:text-n4xo-brown-dark font-bold inline-flex">
-        <img src="email.svg" alt="email" class="w-6 h-6 dark:hidden relative transition-opacity duration-500 mx-1">
-        <img src="email-white.svg" alt="email" class="w-6 h-6 hidden dark:block relative transition-opacity duration-500 mx-1">
+        <img src="email.svg" alt="email" class="w-6 h-6 dark:hidden relative transition-opacity duration-500 mx-1 relative -z-10">
+        <img src="email-white.svg" alt="email" class="w-6 h-6 hidden dark:block relative transition-opacity duration-500 mx-1 relative -z-10">
         me@n4xo.com
       </a>
     </p>
     <p class="leading-relaxed text-l 2xl:text-xl mb-[20px]">
       <a href="https://github.com/n4xo-dev" class="text-n4xo-beige hover:text-n4xo-brown dark:text-n4xo-beige-dark dark:hover:text-n4xo-brown-dark font-bold inline-flex">
-        <img src="github-mark.svg" alt="GitHub" class="w-6 h-6 dark:hidden relative transition-opacity duration-500 mx-1">
-        <img src="github-mark-white.svg" alt="GitHub" class="w-6 h-6 hidden dark:block relative transition-opacity duration-500 mx-1">
+        <img src="github-mark.svg" alt="GitHub" class="w-6 h-6 dark:hidden relative transition-opacity duration-500 mx-1 relative -z-10">
+        <img src="github-mark-white.svg" alt="GitHub" class="w-6 h-6 hidden dark:block relative transition-opacity duration-500 mx-1 relative -z-10">
         @n4xo-dev
       </a>
     </p>
     <p class="leading-relaxed text-l 2xl:text-xl mb-[20px]">
       <a href="https://www.linkedin.com/in/n4xo/" class="text-n4xo-beige hover:text-n4xo-brown dark:text-n4xo-beige-dark dark:hover:text-n4xo-brown-dark font-bold inline-flex">
-        <img src="linkedin.svg" alt="LinkedIn" class="w-6 h-6 dark:hidden relative transition-opacity duration-500 mx-1">
-        <img src="linkedin-white.svg" alt="LinkedIn" class="w-6 h-6 hidden dark:block relative transition-opacity duration-500 mx-1">
+        <img src="linkedin.svg" alt="LinkedIn" class="w-6 h-6 dark:hidden relative transition-opacity duration-500 mx-1 relative -z-10">
+        <img src="linkedin-white.svg" alt="LinkedIn" class="w-6 h-6 hidden dark:block relative transition-opacity duration-500 mx-1 relative -z-10">
         @n4xo
       </a>
     </p>
     <p class="leading-relaxed text-l 2xl:text-xl mb-[20px]">
       <a href="https://x.com/n4xo_dev" class="text-n4xo-beige hover:text-n4xo-brown dark:text-n4xo-beige-dark dark:hover:text-n4xo-brown-dark font-bold inline-flex">
-        <img src="x.svg" alt="X former twitter" class="w-6 h-6 dark:hidden relative transition-opacity duration-500 mx-1">
-        <img src="x-white.svg" alt="X former twitter" class="w-6 h-6 hidden dark:block relative transition-opacity duration-500 mx-1">
+        <img src="x.svg" alt="X former twitter" class="w-6 h-6 dark:hidden relative transition-opacity duration-500 mx-1 relative -z-10">
+        <img src="x-white.svg" alt="X former twitter" class="w-6 h-6 hidden dark:block relative transition-opacity duration-500 mx-1 relative -z-10">
         @n4xo_dev
       </a>
     </p>
