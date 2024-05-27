@@ -71,7 +71,7 @@
       {#if submitted}
         <p class="bg-neutral-200 rounded-md p-4 text-center leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mb-[20px]">This form is not functional yet. Please reach out to me directly at me@n4xo.com</p>
       {:else}
-        <form on:submit|preventDefault={handleSubmit} action="http://localhost:3000/api/contact" method="POST" class="flex flex-col gap-5">
+        <form on:submit|preventDefault={handleSubmit} action="https://n4xo-mailer.vercel.app/api/contact" method="POST" class="flex flex-col gap-5">
           <label for="name" class="text-l 2xl:text-xl">Name</label>
           <input required type="text" name="name" id="name" class="p-2 text-l 2xl:text-xl rounded-md border-2 border-gray-300" placeholder="Your name here">
           <label for="email" class="text-l 2xl:text-xl">Email</label>
