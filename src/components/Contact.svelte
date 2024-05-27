@@ -5,11 +5,16 @@
       event.preventDefault();
 
       const formData = new FormData(event.target);
+      const body = {
+          name: formData.get("name"),
+          email: formData.get("email"),
+          message: formData.get("message"),
+      };
       fetch(event.target.action, {
           method: "POST",
-          body: formData,
-          headers: { 'Accept': 'application/json' }
-      }).then(response => {
+          body: JSON.stringify(body),
+          headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }
+      }).then(response => {console.log(response);
           if (response.ok) {
               submitted = true;
           } else {
@@ -17,11 +22,12 @@
                   if (Object.hasOwn(data, 'errors')) {
                       alert(data["errors"].map(error => error["message"]).join(", "));
                   } else {
-                      alert("Oops! There was a problem submitting your form");
+                      alert("Oops! There was a problem sending the email");
                   }
               });
           }
       }).catch(error => {
+        console.error(error);
           alert("Oops! There was a problem submitting your form");
       });
   }
@@ -65,7 +71,7 @@
       {#if submitted}
         <p class="bg-neutral-200 rounded-md p-4 text-center leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mb-[20px]">This form is not functional yet. Please reach out to me directly at me@n4xo.com</p>
       {:else}
-        <form on:submit={handleSubmit} action="" method="POST" class="flex flex-col gap-5">
+        <form on:submit|preventDefault={handleSubmit} action="http://localhost:3000/api/contact" method="POST" class="flex flex-col gap-5">
           <label for="name" class="text-l 2xl:text-xl">Name</label>
           <input required type="text" name="name" id="name" class="p-2 text-l 2xl:text-xl rounded-md border-2 border-gray-300" placeholder="Your name here">
           <label for="email" class="text-l 2xl:text-xl">Email</label>
