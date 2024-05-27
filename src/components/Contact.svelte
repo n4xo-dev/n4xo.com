@@ -69,15 +69,15 @@
   <div class="flex-1 flex items-center justify-center">
     <div class="w-full">
       {#if submitted}
-        <p class="bg-neutral-200 rounded-md p-4 text-center leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mb-[20px]">This form is not functional yet. Please reach out to me directly at me@n4xo.com</p>
+        <p class="bg-neutral-200 dark:bg-neutral-600 rounded-md p-4 text-center leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mb-[20px]">Thank you for reaching out! I'll get back to you as soon as possible.</p>
       {:else}
         <form on:submit|preventDefault={handleSubmit} action="https://n4xo-mailer.vercel.app/api/contact" method="POST" class="flex flex-col gap-5">
           <label for="name" class="text-l 2xl:text-xl">Name</label>
-          <input required type="text" name="name" id="name" class="p-2 text-l 2xl:text-xl rounded-md border-2 border-gray-300" placeholder="Your name here">
+          <input required type="text" name="name" id="name" class="p-2 text-l 2xl:text-xl rounded-md border-2 border-gray-300 dark:text-black" placeholder="Your name here">
           <label for="email" class="text-l 2xl:text-xl">Email</label>
-          <input required type="email" name="email" id="email" class="p-2 text-l 2xl:text-xl rounded-md border-2 border-gray-300" placeholder="Your email here">
+          <input required type="email" name="email" id="email" class="p-2 text-l 2xl:text-xl rounded-md border-2 border-gray-300 dark:text-black" placeholder="Your email here">
           <label for="message" class="text-l 2xl:text-xl">Message</label>
-          <textarea required name="message" id="message" class="p-2 text-l 2xl:text-xl rounded-md border-2 border-gray-300" placeholder="Your message here..."></textarea>
+          <textarea required name="message" id="message" class="p-2 text-l 2xl:text-xl rounded-md border-2 border-gray-300 dark:text-black" placeholder="Your message here..."></textarea>
           <button type="submit" class="bg-n4xo-beige dark:bg-n4xo-beige-dark text-white font-bold py-3 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-n4xo-beige dark:focus:ring-n4xo-beige-dark hover:bg-n4xo-brown dark:hover:bg-n4xo-brown-dark">Send</button>
         </form>
       {/if}
