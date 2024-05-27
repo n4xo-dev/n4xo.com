@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import defultTheme from 'tailwindcss/defaultTheme';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -15,10 +15,10 @@ export default {
 				'n4xo-dark': '#282828',
 			},
 			fontFamily: {
-				sans: ['JetBrains Mono', ...defultTheme.fontFamily.sans],
+				sans: ['JetBrains Mono Variable', ...defaultTheme.fontFamily.sans],
 			},
 			fontSize: {
-				...defultTheme.fontSize,
+				...defaultTheme.fontSize,
 				'6.5xl': '4rem',
 			},
 			transitionProperty: {

@@ -10,7 +10,7 @@ const { position, company, link, date } = Astro.props;
 ---
 
 <div class="grid grid-cols-3 items-center">
-  <h3 class="text-left leading-tight text-l sm:text-l md:text-xl 2xl:text-2xl mb-[20px]">{position}</h3>
-  <a class="text-center leading-tight text-l sm:text-l md:text-xl 2xl:text-2xl mb-[20px] font-light underline text-n4xo-beige hover:text-n4xo-brown dark:text-n4xo-beige-dark dark:hover:text-n4xo-brown-dark" href={link} target="_blank">{company}</a>
+  <h3 class="text-left leading-tight text-l sm:text-l md:text-xl 2xl:text-2xl mb-[20px] font-medium">{position}</h3>
+  <a class="text-center leading-tight text-l sm:text-l md:text-xl 2xl:text-2xl mb-[20px] font-extralight underline text-n4xo-beige hover:text-n4xo-brown dark:text-n4xo-beige-dark dark:hover:text-n4xo-brown-dark" href={link} target="_blank">{company}</a>
   <p class="text-right leading-tight text-l sm:text-l md:text-xl 2xl:text-2xl mb-[20px] font-thin">{date}</p>
 </div>
