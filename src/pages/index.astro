@@ -20,7 +20,7 @@ import Contact from '../components/Contact.svelte';
 					<p class="leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mb-[20px]">Hey! I'm Nacho (n4xo), a passionate software engineer specializing in backend development.</p>
 				</div>
 				<div>
-					<p class="leading-relaxed text-l 2xl:text-xl mb-[20px]">I graduated with a degree in Computer Science from the University of Málaga, and I've been honing my skills as a software engineer for nearly two years. My professional journey includes optimizing database pipelines, leading chatbot integrations, and automating processes to enhance efficiency.</p>
+					<p class="leading-relaxed text-l 2xl:text-xl mb-[20px]">I graduated with a degree in Computer Science from the University of Málaga, and I've been honing my skills as a software engineer for nearly three years. My professional journey includes optimizing database pipelines, leading chatbot integrations, and automating processes to enhance efficiency.</p>
 					<br>
 					<p class="leading-relaxed text-l 2xl:text-xl mb-[20px]">I thrive in environments where I can learn and apply new technologies. Currently, I work with Node.js and TypeScript but have a deep love for Go, particularly with the Fiber framework. I'm also diving into Svelte for front-end development and have my sights set on mastering Rust soon.</p>
 				</div>
@@ -44,38 +44,47 @@ import Contact from '../components/Contact.svelte';
 		</LandingSection>
 		<LandingSection title="Resume" id="resume">
 			<div>
-				<h2 class="leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mb-[20px] underline">Professional experience</h2>
-				<ResumeHeader position='Backend Software Engineer' company='Bizaway' link='https://bizaway.com/en/' date='Nov 2023 - Present'/>
+				<h2 class="leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl">Summary</h2>
+				<hr class="border-n4xo-dark border-2 dark:border-n4xo-light"><br>
+				<p class="text-l 2xl:text-xl">Results-driven <strong>Backend Software Engineer API Expert</strong> with over 3 years of experience specializing in <strong>Node.js</strong> development.
+					Expertise in APIs, building scalable microservices, optimizing backend performance, and leading complex projects. Proficient in distributed systems, client-server architectures, and cloud platforms.
+					Experienced in all stages of the software development lifecycle with a strong focus on code quality and craftsmanship. <strong>Author on Medium</strong>, sharing insights on backend development.
+					Seeking to leverage my Node.js and backend development skills to contribute to a forward-thinking team focused on innovation and excellence.</p>
+				<h2 class="leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mt-[20px]">Professional experience</h2>
+				<hr class="border-n4xo-dark border-2 dark:border-n4xo-light"><br>
+				<ResumeHeader position='Mid-level Backend Software Engineer' company='Bizaway' link='https://bizaway.com/en/' date='Nov 2023 - Present'/>
 				<ul class="list-disc list-inside mb-5">
-					<li class="leading-snug text-l 2xl:text-xl">Optimized DB pipelines, lowering the processing time from 30 seconds to under 400ms.</li>
-					<li class="leading-snug text-l 2xl:text-xl">Contributed to the core code base and created microservices to integrate with third-party providers.</li>
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Optimized</strong> backend for "BizzyFlex" insurance product, reducing database processing time from <strong>30 seconds to 400 milliseconds</strong> (90% efficiency gain).</li>
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Led</strong> the development of a customer support microservice integrating with Zendesk; implemented a custom versioning system for forms and fields, improving <strong>data accuracy</strong> and streamlining customer interactions.</li>
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Authored</strong> comprehensive technical documentation and <strong>mentored</strong> junior developers on system architecture, design principles, testing methodologies, and best practices.</li>
 				</ul>
-				<ResumeHeader position='Software Engineer' company='Ebury' link='https://ebury.com/' date='Jul 2023 - Nov 2023'/>
+				<ResumeHeader position='Mid-level Software Engineer' company='Ebury' link='https://ebury.com/' date='Jul 2023 - Nov 2023'/>
 				<ul class="list-disc list-inside mb-5">
-					<li class="leading-snug text-l 2xl:text-xl">Led the EburyGPT BPA integration, allowing Ebury employees to use our services through the EburyGPT chatbot.</li>
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Spearheaded</strong> the <strong>EburyGPT BPA integration</strong>, enhancing employee access to critical integrations via an intuitive chatbot interface; implemented Salesforce ID lookup for Business Support using OpenAI API's Function Calls.</li>
 				</ul>
 				<ResumeHeader position='Junior Software Engineer' company='Ebury' link='https://ebury.com/' date='Jan 2023 - Jul 2023'/>
 				<ul class="list-disc list-inside mb-5">
-					<li class="leading-snug text-l 2xl:text-xl">Helped fulfill regulatory obligations by developing an automated microservices process to regularly back up over 26,000 files from Google Drive to a Google Cloud Storage bucket.</li>
-					<li class="leading-snug text-l 2xl:text-xl">Facilitated employees' performance analysis by creating a tool to extract tasks' metadata from all teams in Jira.</li>
-					<li class="leading-snug text-l 2xl:text-xl">Improved developer experience in our team by creating Google Apps Script libraries for commonly used APIs and a Node.js library to authenticate Google API libraries using impersonation (domain-wide delegation).</li>
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Engineered</strong> automated microservices for regulatory compliance, backing up <strong>26,000+ files</strong> from Google Drive to GCP Storage with flawless reliability at only <strong>€0.05 per year</strong>.</li>
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Boosted</strong> employee performance tracking by <strong>developing</strong> an advanced Jira task metadata extraction tool, providing actionable insights and improving decision-making efficiency.</li>
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Enhanced</strong> developer experience by creating Google Apps Script and Node.js libraries for seamless API integration.</li>
 				</ul>
 				<ResumeHeader position='Part-time Software Engineer' company='Ebury' link='https://ebury.com/' date='Aug 2022 - Jan 2023'/>
 				<ul class="list-disc list-inside mb-5">
-					<li class="leading-snug text-l 2xl:text-xl">Increased consistency on Ebury's infrastructure reconciling Google Workspace Admin and HiBob's data for over 1,600 employees by creating a synchronization cronjob using their APIs and “exploiting” Google Apps Script Web Apps, incurring no cost.</li>
-					<li class="leading-snug text-l 2xl:text-xl">Created a new documentation system for our team using Docsify, improving team collaboration.</li>
-					<li class="leading-snug text-l 2xl:text-xl">Reduced HR and Service Desk's workload by automating employee onboarding on Jira, Vonage, and Fenergo.</li>
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Automated</strong> data reconciliation between Google Workspace Admin and HiBob for <strong>1,600+ employees</strong> by developing a robust synchronization cronjob, significantly improving data consistency and reducing manual effort.</li>
+					<li class="leading-snug text-l 2xl:text-xl"><strong>Streamlined</strong> HR and Service Desk onboarding processes by designing and implementing an automated solution using Jira, Vonage, and Fenergo, reducing onboarding time and minimizing manual errors.</li>
 				</ul>
 				<ResumeHeader position='Paintball Instructor' company='Paintball Mountain' link='https://www.paintballmountain.es/' date='Oct 2021 - Apr 2022'/>
 				<ul class="list-disc list-inside mb-5">
-					<li class="leading-snug text-l 2xl:text-xl">Honed interpersonal and sales skills by instructing clients on safe paintball practices, supervising gameplay, and successfully upselling reloads, showcasing an ability to understand and cater to client needs effectively.</li>
-				<h2 class="leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mt-[20px] mb-[20px] underline">Education</h2>
+					<li class="leading-snug text-l 2xl:text-xl">Honed interpersonal and sales skills by instructing clients on safe paintball practices, supervising gameplay, and successfully <strong>upselling</strong> reloads, showcasing an ability to understand and <strong>cater to client needs</strong> effectively.</li>
+				<h2 class="leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mt-[20px]">Education</h2>
+				<hr class="border-n4xo-dark border-2 dark:border-n4xo-light"><br>
 				<ResumeHeader position="Bachelor's Degree in Computer Science" company='Universidad de Málaga' link='https://www.uma.es/' date='2024'/>
-				<ul class="list-disc list-inside mb-5">
+				<ul class="list-disc list-inside">
 					<li class="leading-snug text-l 2xl:text-xl"><strong>Honors</strong>: Introduction to Software Engineering 10, Computer Structure 9.9, Computer Technology 9.7</li>
 				</ul>
 				<ResumeHeader position='Enxtension Course on Deep Learning and CUDA' company='Universidad de Málaga' link='https://www.uma.es/' date='2021'/>
-				<h2 class="leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mt-[20px] mb-[20px] underline">Skills</h2>
+				<h2 class="leading-tight text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mt-[20px]">Skills</h2>
+				<hr class="border-n4xo-dark border-2 dark:border-n4xo-light"><br>
 				<ul class="list-disc list-inside mb-5">
 					<li class="leading-snug text-l 2xl:text-xl"><strong>Programming Languages</strong>: TypeScript, JavaScript, Go, Python, SQL, Java, C, HTML, CSS.</li>
 					<li class="leading-snug text-l 2xl:text-xl"><strong>Web Dev</strong>: Node.js, Express, Fiber, REST, GraphQL, gRPC, PostgreSQL, MongoDB Redis, Docker, Apps Script.</li>
